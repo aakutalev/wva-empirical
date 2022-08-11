@@ -1,0 +1,12 @@
+experiment_id: "wva-sgd-1x-deltas"
+lambdas: [20500, 25250, 250]
+net_struct: [784, 300, 150, 10]
+learning_rate: 0.2
+batch_size: 100
+epoch_num: 4
+repeats: 2
+device: "cuda:3"
+model_class: fc_sgd_wvaF_1x_deltas.Model
+validation_samples: 5000
+importances_on_validation_samples: true
+empirical_fisher: true

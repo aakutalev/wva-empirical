@@ -1,0 +1,12 @@
+experiment_id: "wva-adam-exp-deltas"
+lambdas: [80, 160, 5]
+net_struct: [784, 300, 150, 10]
+learning_rate: 0.001
+batch_size: 100
+epoch_num: 4
+repeats: 2
+device: "cuda:2"
+model_class: fc_adam_wvaF_exp_deltas.Model
+validation_samples: 5000
+importances_on_validation_samples: true
+empirical_fisher: true

@@ -1,0 +1,12 @@
+experiment_id: "wva-sgd-exp-grads"
+lambdas: [80, 160, 5]
+net_struct: [784, 300, 150, 10]
+learning_rate: 0.2
+batch_size: 100
+epoch_num: 4
+repeats: 2
+device: "cuda:5"
+model_class: fc_sgd_wvaF_exp_grads.Model
+validation_samples: 5000
+importances_on_validation_samples: true
+empirical_fisher: true
